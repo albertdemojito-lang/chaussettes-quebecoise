@@ -1,0 +1,221 @@
+{
+  "body": {
+    "font": "Lato, sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "color": "rgb(0, 0, 0)",
+    "bg": "rgb(255, 255, 255)",
+    "lh": "normal",
+    "ls": "normal",
+    "radius": "0px",
+    "tt": "none"
+  },
+  "h1": {
+    "font": "Poppins, sans-serif",
+    "size": "30px",
+    "weight": "700",
+    "color": "rgb(0, 0, 0)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "lh": "36px",
+    "ls": "normal",
+    "radius": "0px",
+    "tt": "none"
+  },
+  "h2": {
+    "font": "Poppins, sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "color": "rgb(0, 0, 0)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "lh": "20px",
+    "ls": "normal",
+    "radius": "0px",
+    "tt": "none"
+  },
+  "btn": {
+    "font": "Lato, sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "color": "rgb(0, 0, 0)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "lh": "20px",
+    "ls": "normal",
+    "radius": "0px",
+    "tt": "none"
+  },
+  "header": {
+    "font": "Lato, sans-serif",
+    "size": "20px",
+    "weight": "400",
+    "color": "rgb(0, 0, 0)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "lh": "normal",
+    "ls": "normal",
+    "radius": "0px",
+    "tt": "none"
+  },
+  "headerH": 88.96875,
+  "navLinks": [
+    "Account",
+    "Cart\n\n    \n      \n        0",
+    "🎄 Christmas Socks",
+    "Sweater Socks",
+    "New Colors",
+    "All Socks",
+    "Support",
+    "Account",
+    "Cart"
+  ],
+  "footerText": "Company Business address: 3140 W. Main Street, Riverton, WY 82501, United States Support: hello@maplena.com Phone: +1 (888) 833-5004 Collabs and partnerships: collab@maplena.com Support Contact Us Track Your Order FAQ Shipping Policy Refund Policy Get Exclusive Deals! Subscribe to our email list to be the first one to get notified about new products, deals, giveaways and much more! Currency USD $ © Maplena 2026 Privacy Policy Terms of Service Do not sell or share my personal information",
+  "fonts": [
+    "Poppins 700 loaded",
+    "Lato 400 loaded",
+    "Lato 400 loaded",
+    "Lato 400 loaded",
+    "Lato 400 loaded",
+    "Lato 700 loaded",
+    "Lato 400 loaded",
+    "Lato 700 unloaded",
+    "Lato 500 unloaded",
+    "JudgemeStar normal unloaded"
+  ],
+  "cssVars": {
+    "--color-base-text": "",
+    "--color-base-background-1": "",
+    "--color-base-accent-1": "",
+    "--font-heading-family": "",
+    "--font-body-family": "",
+    "--buttons-radius": "",
+    "--page-width": ""
+  },
+  "sections": [
+    {
+      "id": "shopify-section-maplena-countdown-bar",
+      "cls": "shopify-section shopify-section-countdown-bar",
+      "h": 58,
+      "top": 0,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "BLACK FRIDAY SALE BUY 5 GET 5 FREE 01 DAYS : 15 HRS : 01 MIN : 09 SEC"
+    },
+    {
+      "id": "shopify-section-sections--20724125401239__header",
+      "cls": "shopify-section shopify-section-group-group-header page-header",
+      "h": 89,
+      "top": 58,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "🎄 Christmas Socks Sweater Socks New Colors All Socks Support Account Search Cart"
+    },
+    {
+      "id": "shopify-section-sections--20724125401239__mobile_menu_kMYLiQ",
+      "cls": "shopify-section shopify-section-group-group-header",
+      "h": 0,
+      "top": 147,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": ""
+    },
+    {
+      "id": "shopify-section-sections--20724125434007__cart-drawer",
+      "cls": "shopify-section shopify-section-group-group-overlay",
+      "h": 0,
+      "top": 147,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": ""
+    },
+    {
+      "id": "shopify-section-template--20724133593239__hero_slideshow",
+      "cls": "shopify-section section-overlay-header",
+      "h": 396,
+      "top": 147,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "View slide 1 View slide 2 View slide 3"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__scrolling_bar",
+      "cls": "shopify-section",
+      "h": 48,
+      "top": 543,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "Black Friday 90-Day Guarantee Fast US & Canada Shipping 24/7 Customer Support Secure Checkout Black Friday 90-Day Guarantee Fast US & Canada Shipping 24/7 Customer Support Secure Checkout Black Friday"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__best_sellers",
+      "cls": "shopify-section",
+      "h": 1158,
+      "top": 592,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "Best Sellers SHOP ALL Best Seller ADD TO CART Sweater Socks - The Coziest Slouchy Boot Socks (5 Pairs) $29.97 New ADD TO CART Sweater Socks - Winter Pack (5 Pairs) $29.97 Selling Fast ADD TO CART Chri"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__tile_sweater",
+      "cls": "shopify-section section-overlay-header",
+      "h": 605,
+      "top": 1750,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "COZY SEASON The coziest slouchy boot socks Plush terry inside, wide ribbed cuff that stays up without squeezing. Five neutral colors, two simple sizes. SHOP SWEATER SOCKS"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__featured_sweater",
+      "cls": "shopify-section",
+      "h": 905,
+      "top": 2355,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "Previous Next 4.9 | 1987 Verified Reviews Sweater Socks - The Coziest Slouchy Boot Socks (5 Pairs) Way warmer than they look Stays up on its own, never squeezes So comfy you'll forget you're wearing t"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__tile_christmas",
+      "cls": "shopify-section section-overlay-header",
+      "h": 605,
+      "top": 3260,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "HOLIDAY SEASON Christmas socks you'll wear all season long Ten embroidered designs in white, red and green, stitched into the cuff so they never crack or fade. One pair for the teacher, a pack of five"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__faq",
+      "cls": "shopify-section",
+      "h": 611,
+      "top": 3865,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "Frequently asked questions How do your bundle offers work? When will my order arrive? Do you ship to Canada or the UK? How do I track my order? What is your return policy? What sizes do your socks com"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__newsletter",
+      "cls": "shopify-section",
+      "h": 385,
+      "top": 4476,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "Stay in the loop New designs and colorways, plus the occasional home tip. No spam. JOIN"
+    },
+    {
+      "id": "shopify-section-template--20724133593239__typescale",
+      "cls": "shopify-section",
+      "h": 0,
+      "top": 4861,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": ""
+    },
+    {
+      "id": "shopify-section-sections--20724125466775__section-newsletter",
+      "cls": "shopify-section shopify-section-group-group-pre-footer",
+      "h": 0,
+      "top": 4861,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": ""
+    },
+    {
+      "id": "shopify-section-sections--20724125368471__footer",
+      "cls": "shopify-section shopify-section-group-group-footer",
+      "h": 489,
+      "top": 4861,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "Company Business address: 3140 W. Main Street, Riverton, WY 82501, United States Support: hello@maplena.com Phone: +1 (888) 833-5004 Collabs and partnerships: collab@maplena.com Support Contact Us Tra"
+    },
+    {
+      "id": "shopify-section-sections--20724125368471__supporting-menu",
+      "cls": "shopify-section shopify-section-group-group-footer",
+      "h": 144,
+      "top": 5351,
+      "bg": "rgba(0, 0, 0, 0)",
+      "text": "Currency USD $ © Maplena 2026 Privacy Policy Terms of Service Do not sell or share my personal information"
+    }
+  ]
+}
