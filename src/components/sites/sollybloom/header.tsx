@@ -17,6 +17,31 @@ export function Logo({ light = false }: { light?: boolean }) {
   );
 }
 
+function NavLink({
+  href,
+  className,
+  onClick,
+  children,
+}: {
+  href: string;
+  className: string;
+  onClick?: () => void;
+  children: React.ReactNode;
+}) {
+  if (href.startsWith("/")) {
+    return (
+      <Link href={href} className={className} onClick={onClick}>
+        {children}
+      </Link>
+    );
+  }
+  return (
+    <a href={href} className={className} onClick={onClick}>
+      {children}
+    </a>
+  );
+}
+
 export function Header() {
   const [open, setOpen] = useState(false);
 
@@ -40,10 +65,10 @@ export function Header() {
           <ul className="flex items-center gap-8 text-[17px] text-sb-ink">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a href={link.href} className="flex items-center gap-1 hover:underline hover:underline-offset-4">
+                <NavLink href={link.href} className="flex items-center gap-1 hover:underline hover:underline-offset-4">
                   {link.label}
                   {link.label === "Aide" && <ChevronDown className="size-3.5" aria-hidden="true" />}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -67,9 +92,9 @@ export function Header() {
           <ul>
             {navLinks.map((link) => (
               <li key={link.label} className="border-b border-sb-line">
-                <a href={link.href} className="block py-4 text-[18px] text-sb-ink" onClick={() => setOpen(false)}>
+                <NavLink href={link.href} className="block py-4 text-[18px] text-sb-ink" onClick={() => setOpen(false)}>
                   {link.label}
-                </a>
+                </NavLink>
               </li>
             ))}
             <li>

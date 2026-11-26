@@ -16,7 +16,7 @@ export function TrustMarquee() {
   );
 }
 
-function ProductCard({ product }: { product: Product }) {
+export function ProductCard({ product }: { product: Product }) {
   return (
     <li className="group relative flex flex-col text-center">
       <div className="relative aspect-square overflow-hidden bg-sb-ice">

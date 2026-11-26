@@ -86,10 +86,10 @@ export const bestSellers: Product[] = [
 
 export const navLinks = [
   { label: "🎄 Chaussettes de Noël", href: productUrl("christmas-socks") },
-  { label: "Chaussettes Cocooning", href: productUrl("sweater-socks") },
+  { label: "Chaussettes Cocooning", href: "/collections/sweater-socks" },
   { label: "Nouveaux coloris", href: productUrl("sweater-socks-winter-pack-5-pairs") },
   { label: "Toutes les chaussettes", href: `${STORE_URL}/collections/all` },
-  { label: "Aide", href: "#faq" },
+  { label: "Aide", href: "/#faq" },
 ];
 
 export const trustItems = [
@@ -133,4 +133,36 @@ export const faqs: { q: string; a: string }[] = [
     q: "Comment vous contacter ?",
     a: "Écrivez-nous via la page Contact de la boutique : une vraie personne répond à chaque message sous 24 h les jours ouvrés.",
   },
+];
+
+const color = (
+  handle: string,
+  name: string,
+  image: string,
+  swatch: string,
+  badge?: string,
+): Product => ({
+  handle,
+  title: `Chaussettes Cocooning ${name} (5 paires)`,
+  price: 29.97,
+  image: `/sites/sollybloom/${image}.jpg`,
+  badge,
+  swatches: [swatch],
+});
+
+export const sweaterSocksCollection: Product[] = [
+  { ...bestSellers[0], title: "Chaussettes Cocooning – Les plus douillettes (5 paires)" },
+  bestSellers[1],
+  bestSellers[3],
+  bestSellers[4],
+  bestSellers[5],
+  bestSellers[6],
+  { ...bestSellers[7], badge: "Tendance" },
+  color("espresso-sweater-socks-the-coziest-slouchy-boot-socks-5-pairs", "Espresso", "espresso", "#3b2a22"),
+  color("plum-sweater-socks-5-pairs", "Prune", "plum", "#4b2a5c", "Nouveau"),
+  color("camel-sweater-socks-the-coziest-slouchy-boot-socks-5-pairs", "Camel", "camel", "#b08a55"),
+  color("wine-sweater-socks-5-pairs", "Bordeaux", "wine", "#5a1530", "Nouveau"),
+  color("dove-grey-sweater-socks-5-pairs", "Gris Perle", "dove-grey", "#7c7f83", "Nouveau"),
+  color("blush-pink-sweater-socks-5-pairs", "Rose Poudré", "blush-pink", "#f0bcc8", "Nouveau"),
+  color("ice-blue-sweater-socks-5-pairs", "Bleu Glacier", "ice-blue", "#8fc6e6", "Nouveau"),
 ];

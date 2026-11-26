@@ -1,11 +1,12 @@
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 import { STORE_URL } from "./data";
 import { Logo } from "./header";
 
 const supportLinks = [
   { label: "Nous contacter", href: `${STORE_URL}/pages/contact` },
   { label: "Suivre ma commande", href: `${STORE_URL}/account` },
-  { label: "FAQ", href: "#faq" },
+  { label: "FAQ", href: "/#faq" },
   { label: "Politique de livraison", href: `${STORE_URL}/policies/shipping-policy` },
   { label: "Politique de remboursement", href: `${STORE_URL}/policies/refund-policy` },
 ];
@@ -40,9 +41,15 @@ export function Footer() {
             <ul className="mt-4 space-y-4 text-[19px] text-white/90">
               {supportLinks.map((l) => (
                 <li key={l.label}>
-                  <a href={l.href} className="hover:underline hover:underline-offset-4">
-                    {l.label}
-                  </a>
+                  {l.href.startsWith("/") ? (
+                    <Link href={l.href} className="hover:underline hover:underline-offset-4">
+                      {l.label}
+                    </Link>
+                  ) : (
+                    <a href={l.href} className="hover:underline hover:underline-offset-4">
+                      {l.label}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>

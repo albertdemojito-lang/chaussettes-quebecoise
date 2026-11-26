@@ -1,0 +1,74 @@
+{
+  "sections": [
+    {
+      "id": "shopify-section-maplena-countdown-bar",
+      "h": 58,
+      "text": "BLACK FRIDAY SALE BUY 5 GET 5 FREE 01 DAYS : 14 HRS : 54 MIN : 40 SEC"
+    },
+    {
+      "id": "shopify-section-sections--20724125401239__header",
+      "h": 89,
+      "text": "🎄 Christmas Socks Sweater Socks New Colors All Socks Support Account Search Cart"
+    },
+    {
+      "id": "shopify-section-template--27878431948951__section_divider_dVzcmz",
+      "h": 1,
+      "text": ""
+    },
+    {
+      "id": "shopify-section-template--27878431948951__mpl_banner",
+      "h": 245,
+      "text": ""
+    },
+    {
+      "id": "shopify-section-template--27878431948951__hero",
+      "h": 154,
+      "text": "Sweater Socks 14"
+    },
+    {
+      "id": "shopify-section-template--27878431948951__main",
+      "h": 1930,
+      "text": " Best Seller ADD TO CART Sweater Socks - The Coziest Slouchy Boot Socks (5 Pairs) $29.97 New ADD TO CART Sweater Socks - Winter Pack (5 Pairs) $29.97 Top Color ADD TO CART Black Sweater Socks (5 Pairs) $29.97 Top Color ADD TO CART Cream Sweater Socks (5 Pairs) $29.97 New ADD TO CART Navy Sweater Socks (5 Pairs) $29.97 New ADD TO CART Charcoal Sweater Socks (5 Pairs) $29.97 Trending ADD TO CART Tau"
+    },
+    {
+      "id": "shopify-section-sections--20724125368471__footer",
+      "h": 489,
+      "text": "Company Business address: 3140 W. Main Street, Riverton, WY 82501, United States Support: hello@maplena.com Phone: +1 (888) 833-5004 Collabs and partnerships: collab@maplena.com Support Contact Us Track Your Order FAQ Shipping Policy Refund Policy Get Exclusive Deals! Subscribe to our email list to be the first one to get notified about new products, deals, giveaways and much more!"
+    },
+    {
+      "id": "shopify-section-sections--20724125368471__supporting-menu",
+      "h": 144,
+      "text": "Currency USD $ © Maplena 2026 Privacy Policy Terms of Service Do not sell or share my personal information"
+    }
+  ],
+  "h1": {
+    "t": "Sweater Socks 14",
+    "size": "30px",
+    "font": "Poppins, sans-serif",
+    "w": "700"
+  },
+  "products": [
+    "/products/christmas-socks",
+    "/collections/sweater-socks/products/sweater-socks",
+    "/collections/sweater-socks/products/sweater-socks-winter-pack-5-pairs",
+    "/collections/sweater-socks/products/black-sweater-socks-the-coziest-slouchy-boot-socks-5-pairs",
+    "/collections/sweater-socks/products/cream-sweater-socks-the-coziest-slouchy-boot-socks-5-pairs",
+    "/collections/sweater-socks/products/navy-sweater-socks-5-pairs",
+    "/collections/sweater-socks/products/charcoal-sweater-socks-5-pairs",
+    "/collections/sweater-socks/products/taupe-sweater-socks-the-coziest-slouchy-boot-socks-5-pairs",
+    "/collections/sweater-socks/products/espresso-sweater-socks-the-coziest-slouchy-boot-socks-5-pairs",
+    "/collections/sweater-socks/products/plum-sweater-socks-5-pairs",
+    "/collections/sweater-socks/products/camel-sweater-socks-the-coziest-slouchy-boot-socks-5-pairs",
+    "/collections/sweater-socks/products/wine-sweater-socks-5-pairs",
+    "/collections/sweater-socks/products/dove-grey-sweater-socks-5-pairs",
+    "/collections/sweater-socks/products/blush-pink-sweater-socks-5-pairs",
+    "/collections/sweater-socks/products/ice-blue-sweater-socks-5-pairs"
+  ],
+  "selects": [
+    "Search",
+    "Search",
+    "Pair with",
+    "Company",
+    "Support"
+  ]
+}
