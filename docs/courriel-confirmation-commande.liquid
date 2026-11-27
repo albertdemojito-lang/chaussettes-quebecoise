@@ -1,0 +1,156 @@
+{% comment %}
+  Courriel « Confirmation de commande » — Chaussettes Québécoise
+  À coller dans Shopify : Paramètres → Notifications → Notifications aux clients
+  → Confirmation de commande → Modifier le code → remplacer tout le contenu → Enregistrer.
+{% endcomment %}
+{% capture email_title %}C’est confirmé, {{ customer.first_name | default: 'merci' }} !{% endcapture %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ email_title }}</title>
+  <style>
+    body { margin:0; padding:0; background:#EAF1F8; font-family: Helvetica, Arial, sans-serif; color:#0B1626; }
+    .wrap { width:100%; background:#EAF1F8; padding:24px 0; }
+    .card { max-width:600px; margin:0 auto; background:#FFFFFF; border-radius:14px; overflow:hidden; }
+    .top { background:#0B2545; color:#FFFFFF; padding:18px 28px; }
+    .brand { font-family: Georgia, 'Times New Roman', serif; font-size:22px; letter-spacing:.02em; }
+    .brand small { display:block; font-family: Helvetica, Arial, sans-serif; font-size:9px; letter-spacing:.4em; color:#F2C14E; text-transform:uppercase; margin-top:3px; }
+    .hero img { display:block; width:100%; height:auto; }
+    .pad { padding:28px; }
+    h1 { font-size:30px; line-height:1.15; margin:0 0 12px; color:#0B2545; }
+    p { font-size:15px; line-height:1.55; margin:0 0 12px; color:#33435A; }
+    .eyebrow { font-size:11px; font-weight:bold; letter-spacing:.14em; text-transform:uppercase; color:#1F5C99; margin:0 0 14px; }
+    .tl td { vertical-align:top; padding:0 0 16px; font-size:14px; }
+    .tl .when { width:110px; font-size:11px; font-weight:bold; letter-spacing:.08em; text-transform:uppercase; color:#1F5C99; padding-right:14px; }
+    .tl .what { border-left:2px solid #0B2545; padding-left:16px; }
+    .tl strong { display:block; color:#0B2545; font-size:15px; margin-bottom:2px; }
+    .tl span { color:#4A5A70; }
+    .panel { background:#EAF1F8; padding:24px 28px; }
+    .perk { background:#FFFFFF; border-radius:10px; padding:12px 14px; font-size:13px; color:#4A5A70; }
+    .perk strong { display:block; color:#0B2545; font-size:14px; margin-bottom:2px; }
+    .items td { padding:10px 0; border-bottom:1px solid #DBE4EE; font-size:14px; vertical-align:middle; }
+    .items img { border-radius:8px; display:block; }
+    .totals td { padding:4px 0; font-size:14px; }
+    .totals .grand td { font-size:17px; font-weight:bold; color:#0B2545; padding-top:10px; }
+    .btn { display:inline-block; background:#0B2545; color:#FFFFFF !important; text-decoration:none; font-weight:bold; font-size:13px; letter-spacing:.04em; text-transform:uppercase; padding:12px 18px; border-radius:6px; margin:4px; }
+    .btn-alt { background:#FFFFFF; color:#0B2545 !important; border:2px solid #0B2545; }
+    .center { text-align:center; }
+    .foot { background:#0B2545; color:#FFFFFF; padding:24px 28px; text-align:center; }
+    .foot p { color:#C9D6E5; font-size:13px; }
+    .foot .btn { background:#FFFFFF; color:#0B2545 !important; }
+    .legal { max-width:600px; margin:14px auto 0; font-size:11px; color:#4A5A70; text-align:center; line-height:1.5; }
+    @media (max-width:480px) { .pad, .panel, .foot, .top { padding-left:18px; padding-right:18px; } .tl .when { width:80px; } h1 { font-size:26px; } .perk-col { display:block !important; width:100% !important; padding:0 0 8px !important; } }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+
+    <div class="top">
+      <div class="brand">Chaussettes<small>Québécoise</small></div>
+    </div>
+
+    <div class="hero">
+      <img src="https://cdn.shopify.com/s/files/1/0783/4625/6438/files/sweater-socks-hero-lineup.jpg?width=1200" alt="Chaussettes Cocooning, cinq paires aux tons neutres" width="600">
+    </div>
+
+    <div class="pad">
+      <h1>{{ email_title }}</h1>
+      <p>Merci pour votre commande <strong>{{ order_name }}</strong>. Voici exactement ce qui va se passer, sans surprise.</p>
+    </div>
+
+    <div class="pad" style="padding-top:0;">
+      <p class="eyebrow">La suite</p>
+      <table class="tl" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+          <td class="when">Aujourd’hui</td>
+          <td class="what"><strong>Commande confirmée</strong><span>Nous préparons vos chaussettes.</span></td>
+        </tr>
+        <tr>
+          <td class="when">Jour 1 à 2</td>
+          <td class="what"><strong>Expédition</strong><span>Votre commande part sous 1 à 2 jours ouvrables. Vous recevez un courriel avec votre numéro de suivi.</span></td>
+        </tr>
+        <tr>
+          <td class="when">Livraison</td>
+          <td class="what"><strong>Vos chaussettes arrivent</strong><span>Selon le délai estimé indiqué au moment du paiement. Suivez votre colis à chaque étape avec le lien de suivi.</span></td>
+        </tr>
+        <tr>
+          <td class="when">30 jours</td>
+          <td class="what"><strong>Remboursement complet possible</strong><span>Pas convaincue ? Retournez-les non portées et non lavées dans les 30 jours suivant la livraison.</span></td>
+        </tr>
+        <tr>
+          <td class="when">90 jours</td>
+          <td class="what"><strong>Garantie</strong><span>Un défaut, un article manquant, une erreur de notre part ? Échange ou remplacement gratuit jusqu’à 90 jours.</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="panel">
+      <p class="eyebrow">Ce qui est inclus</p>
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        <tr>
+          <td class="perk-col" width="50%" style="padding:0 6px 10px 0;"><div class="perk"><strong>🛡️ Garantie 90 jours</strong>Échange ou remplacement en cas de problème.</div></td>
+          <td class="perk-col" width="50%" style="padding:0 0 10px 6px;"><div class="perk"><strong>📦 Livraison suivie</strong>Un lien de suivi dès l’expédition.</div></td>
+        </tr>
+        <tr>
+          <td class="perk-col" width="50%" style="padding:0 6px 0 0;"><div class="perk"><strong>↩️ Remboursement 30 jours</strong>Articles non portés, non lavés.</div></td>
+          <td class="perk-col" width="50%" style="padding:0 0 0 6px;"><div class="perk"><strong>⚜️ Pensées pour l’hiver québécois</strong>Bouclette épaisse, revers qui ne serre pas.</div></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="pad">
+      <p class="eyebrow">Votre commande</p>
+      <table class="items" width="100%" cellpadding="0" cellspacing="0" role="presentation">
+        {% for line in subtotal_line_items %}
+        <tr>
+          <td width="64">{% if line.image %}<img src="{{ line | img_url: 'compact_cropped' }}" width="56" height="56" alt="">{% endif %}</td>
+          <td style="padding-left:12px;">
+            <strong style="color:#0B2545;">{{ line.title }}</strong>{% if line.variant.title != 'Default Title' %}<br><span style="color:#4A5A70;font-size:13px;">{{ line.variant.title }}</span>{% endif %}<br>
+            <span style="color:#4A5A70;font-size:13px;">Quantité : {{ line.quantity }}</span>
+            {% for discount_allocation in line.discount_allocations %}<br><span style="color:#1F5C99;font-size:13px;">{{ discount_allocation.discount_application.title }} (−{{ discount_allocation.amount | money }})</span>{% endfor %}
+          </td>
+          <td align="right" style="white-space:nowrap;">
+            {% if line.original_line_price != line.final_line_price %}<del style="color:#4A5A70;font-size:12px;">{{ line.original_line_price | money }}</del><br>{% endif %}
+            {{ line.final_line_price | money }}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <table class="totals" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-top:12px;">
+        <tr><td>Sous-total</td><td align="right">{{ subtotal_price | money }}</td></tr>
+        {% for discount_application in discount_applications %}{% if discount_application.target_selection == 'all' %}
+        <tr><td>Réduction ({{ discount_application.title }})</td><td align="right">−{{ discount_application.total_allocated_amount | money }}</td></tr>
+        {% endif %}{% endfor %}
+        <tr><td>Livraison</td><td align="right">{{ shipping_price | money }}</td></tr>
+        {% for line in tax_lines %}<tr><td>{{ line.title }}</td><td align="right">{{ line.price | money }}</td></tr>{% endfor %}
+        <tr class="grand"><td>Total</td><td align="right">{{ total_price | money_with_currency }}</td></tr>
+      </table>
+      <p class="center" style="margin-top:20px;"><a class="btn" href="{{ order_status_url }}">Voir ma commande</a></p>
+    </div>
+
+    <div class="pad center" style="border-top:1px solid #DBE4EE;">
+      <p style="font-weight:bold;color:#0B2545;font-size:17px;margin-bottom:4px;">Une question avant la livraison ?</p>
+      <p>Une vraie personne vous répond en moins de 24 h les jours ouvrables.</p>
+      <a class="btn" href="{{ shop.url }}/pages/contact">Nous écrire</a>
+      <a class="btn btn-alt" href="{{ shop.url }}/pages/politique-de-remboursement">Retours et remboursements</a>
+    </div>
+
+    <div class="foot">
+      <p style="color:#FFFFFF;font-weight:bold;font-size:16px;margin-bottom:4px;">La communauté Chaussettes Québécoise</p>
+      <p>Nouveaux coloris, offres en primeur et astuces pour garder les pieds au chaud.</p>
+      <a class="btn" href="{{ shop.url }}">Visiter la boutique</a>
+    </div>
+
+  </div>
+  <p class="legal">
+    Vous recevez ce courriel parce que vous avez passé une commande chez Chaussettes Québécoise.<br>
+    <a href="{{ shop.url }}/pages/politique-de-livraison" style="color:#4A5A70;">Livraison</a> ·
+    <a href="{{ shop.url }}/pages/politique-de-remboursement" style="color:#4A5A70;">Remboursements</a> ·
+    <a href="{{ shop.url }}/pages/politique-de-confidentialite" style="color:#4A5A70;">Confidentialité</a>
+  </p>
+</div>
+</body>
+</html>
